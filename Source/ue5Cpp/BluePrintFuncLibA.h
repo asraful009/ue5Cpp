@@ -13,5 +13,6 @@ UCLASS()
 class UE5CPP_API UBluePrintFuncLibA : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-	
+
+	static FString GetMeg();
 };

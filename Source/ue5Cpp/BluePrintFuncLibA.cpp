@@ -3,3 +3,7 @@
 
 #include "BluePrintFuncLibA.h"
 
+FString UBluePrintFuncLibA::GetMeg()
+{
+	return FString(TEXT("Hi All"));
+}
