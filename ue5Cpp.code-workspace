@@ -1,0 +1,868 @@
+{
+	"folders": [
+		{
+			"name": "ue5Cpp",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "ue5Cpp Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Debug",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Debug",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Debug",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"DebugGame",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"DebugGame",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"DebugGame",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Development",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Development",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Development",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Test",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Test",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Test",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Shipping",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Shipping",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"Linux",
+					"Shipping",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Debug",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Debug",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Debug",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Development",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Development",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Development",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Test",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Test",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Test",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Shipping",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Shipping",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5Cpp LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5Cpp LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5Cpp",
+					"LinuxArm64",
+					"Shipping",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5CppEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5CppEditor",
+					"Linux",
+					"Debug",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5CppEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5CppEditor",
+					"Linux",
+					"Debug",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5CppEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5CppEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5CppEditor",
+					"Linux",
+					"Debug",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5CppEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5CppEditor",
+					"Linux",
+					"DebugGame",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5CppEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5CppEditor",
+					"Linux",
+					"DebugGame",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5CppEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5CppEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5CppEditor",
+					"Linux",
+					"DebugGame",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5CppEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5CppEditor",
+					"Linux",
+					"Development",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5CppEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5CppEditor",
+					"Linux",
+					"Development",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ue5CppEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			},
+			{
+				"label": "ue5CppEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ue5CppEditor",
+					"Linux",
+					"Development",
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch ue5Cpp (Debug)",
+				"request": "launch",
+				"program": "/home/pavel/projects/ue/ue5Cpp/Binaries/Linux/UnrealGame-Linux-Debug",
+				"preLaunchTask": "ue5Cpp Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ue5Cpp (DebugGame)",
+				"request": "launch",
+				"program": "/home/pavel/projects/ue/ue5Cpp/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"preLaunchTask": "ue5Cpp Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ue5Cpp (Development)",
+				"request": "launch",
+				"program": "/home/pavel/projects/ue/ue5Cpp/Binaries/Linux/UnrealGame",
+				"preLaunchTask": "ue5Cpp Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ue5Cpp (Test)",
+				"request": "launch",
+				"program": "/home/pavel/projects/ue/ue5Cpp/Binaries/Linux/UnrealGame-Linux-Test",
+				"preLaunchTask": "ue5Cpp Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ue5Cpp (Shipping)",
+				"request": "launch",
+				"program": "/home/pavel/projects/ue/ue5Cpp/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"preLaunchTask": "ue5Cpp Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ue5CppEditor (Debug)",
+				"request": "launch",
+				"program": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "ue5CppEditor Linux Debug Build",
+				"args": [
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject"
+				],
+				"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ue5CppEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "ue5CppEditor Linux DebugGame Build",
+				"args": [
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject"
+				],
+				"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ue5CppEditor (Development)",
+				"request": "launch",
+				"program": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "ue5CppEditor Linux Development Build",
+				"args": [
+					"/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject"
+				],
+				"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/pavel/projects/ue/ue5Cpp/ue5Cpp.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2"
+			}
+		]
+	}
+}
