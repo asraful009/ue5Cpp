@@ -16,6 +16,54 @@
 		"directory": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Source"
 	},
 	{
+		"file": "/home/pavel/projects/ue/ue5Cpp/Source/ue5Cpp/CharacterUE5.cpp",
+		"arguments": [
+			"/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pavel/projects/ue/ue5Cpp/.vscode/compileCommands_ue5Cpp/ue5Cpp.1.rsp"
+		],
+		"directory": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Source"
+	},
+	{
+		"file": "/home/pavel/projects/ue/ue5Cpp/Source/ue5Cpp/CharacterUE5.h",
+		"arguments": [
+			"/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pavel/projects/ue/ue5Cpp/.vscode/compileCommands_ue5Cpp/ue5Cpp.1.rsp"
+		],
+		"directory": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Source"
+	},
+	{
+		"file": "/home/pavel/projects/ue/ue5Cpp/Source/ue5Cpp/HudUE5.cpp",
+		"arguments": [
+			"/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pavel/projects/ue/ue5Cpp/.vscode/compileCommands_ue5Cpp/ue5Cpp.1.rsp"
+		],
+		"directory": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Source"
+	},
+	{
+		"file": "/home/pavel/projects/ue/ue5Cpp/Source/ue5Cpp/HudUE5.h",
+		"arguments": [
+			"/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pavel/projects/ue/ue5Cpp/.vscode/compileCommands_ue5Cpp/ue5Cpp.1.rsp"
+		],
+		"directory": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Source"
+	},
+	{
+		"file": "/home/pavel/projects/ue/ue5Cpp/Source/ue5Cpp/PlayerControllerUE5.cpp",
+		"arguments": [
+			"/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pavel/projects/ue/ue5Cpp/.vscode/compileCommands_ue5Cpp/ue5Cpp.1.rsp"
+		],
+		"directory": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Source"
+	},
+	{
+		"file": "/home/pavel/projects/ue/ue5Cpp/Source/ue5Cpp/PlayerControllerUE5.h",
+		"arguments": [
+			"/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pavel/projects/ue/ue5Cpp/.vscode/compileCommands_ue5Cpp/ue5Cpp.1.rsp"
+		],
+		"directory": "/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Source"
+	},
+	{
 		"file": "/home/pavel/projects/ue/ue5Cpp/Source/ue5Cpp/ue5Cpp.Build.cs",
 		"arguments": [
 			"/home/pavel/.local/share/ue/Linux_Unreal_Engine_5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
